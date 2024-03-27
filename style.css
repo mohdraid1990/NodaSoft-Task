@@ -1,0 +1,242 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+  --white-color:#FFFFFF;
+  --up-down-color:#7faff6;
+  --btn-color:#A5C7F9;
+  --close-menu:#7FAFF6;
+  --black-color:#000000;
+  --main-color:#b3f95a;
+  --main-color-2:#8ad191;
+  --color-content:#88b5bf;
+  --color-content-1:#0d89b0;
+  --container-color:#c0dbd9;
+}
+/* =========Container======== */
+
+.container {
+  width: 1200px;
+  height: 1000px;
+  background-color: var(--container-color);
+  margin: auto;
+  position: relative;
+}
+
+
+/* ===================== */
+
+ /* ==  Start-Header === */
+
+.header {
+  width: 1170px;
+  height: 100px;
+  background-color:var(--up-down-color);
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.header .menu-button {
+  width: 206px; 
+    height: 39px; 
+    background-color:var(--btn-color); 
+    border: none; 
+    border-radius: 5px; 
+    font-family: Roboto; 
+    font-size: 20px; 
+    font-weight: 400; 
+    line-height: 23.44px; 
+    text-align: center; 
+    color: var(--white-color); 
+    position: absolute; 
+    left: 30px; 
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  
+}
+
+.menu-toggle:checked ~ .menu {
+  display: flex;
+}
+
+.close-menu:checked ~ .menu {
+  display: none;
+}
+.menu-toggle { 
+  display: none; 
+} 
+
+.close-menu { 
+  display: none; 
+} 
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    height: 200px; 
+    width: 200px; 
+    background-color: var(--white-color); 
+    position: absolute; 
+    top: 101px; 
+    display: none;
+    z-index: 1;
+}
+
+.header .menu .close-menu  {
+  width: 43px; 
+  height: 39px; 
+  background-color: var(--close-menu); 
+  text-align: center; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  position: absolute; 
+  top: 4px; 
+  right: 6px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  z-index: 3;
+  border: none;
+  font-family: Roboto;
+font-size: 20px;
+font-weight: 400;
+line-height: 23.44px;
+color: var(--white-color);
+cursor: pointer;
+
+}
+
+.header .menu p{
+  font-family: Roboto;
+font-size: 53px;
+font-weight: 400;
+line-height: 62.11px;
+text-align: center;
+color: var(--black-color);
+
+}
+
+ /* ==  End-Header === */
+
+/* ========================= */
+
+
+ /* ==Start-Main */
+.main {
+  width: 1170px;
+  height: 411px;
+  background-color: var(--main-color);
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.main-up,
+.main-down {
+  display: flex;
+  align-content: space-around;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-up .main-1,
+.main-2,
+.main-3,
+.main-4,
+.main-5,
+p {
+  font-family: Roboto;
+  font-size: 53px;
+  font-weight: 400;
+  line-height: 62.11px;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-up .main-1 {
+  width: 390px;
+  height: 198px;
+  background-color: var(--main-color-2);
+}
+.main-up .main-2 {
+  width: 590px;
+  height: 198px;
+  background-color: var(--main-color-2);
+}
+
+.main-up .main-3 ,.main-5 {
+  width: 160px;
+  height: 198px;
+  background-color: var(--main-color-2);
+}
+
+.main-down .main-4 {
+  width: 995px;
+  height: 198px;
+  background-color: var(--main-color-2);
+}
+
+
+ /* ==  End-Main === */
+
+ /* ======================= */
+
+
+ /* ==  Start-Content === */
+
+.content {
+  background-color: var(--color-content);
+  width: 1170px;
+  height: 259px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.content .cont-1 {
+  width: 255px;
+  height: 199px;
+  background-color: var(--color-content-1);
+}
+
+
+
+ /* ======================= */
+
+ /* ==  Start-Footer === */
+
+.footer {
+  width: 1170px;
+  height: 100px;
+  background-color: var(--up-down-color);
+  margin: auto;
+  margin-top: 83px;
+}
+ /* ==  End-Footer === */
